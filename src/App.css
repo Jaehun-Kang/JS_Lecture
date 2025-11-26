@@ -1,0 +1,56 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.code-wrapper {
+  margin: 1rem 0;
+}
+
+.code-filename {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #e0e0e0;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background-color: #2a2a2a;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  box-sizing: border-box;
+  gap: 1rem;
+}
+
+.code-filename span {
+  flex: 1;
+  text-align: left;
+}
+
+.copy-button {
+  background-color: #3a3a3a;
+  color: #e0e0e0;
+  border: 1px solid #555;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.copy-button:hover {
+  background-color: #4a4a4a;
+  border-color: #888;
+  color: #fff;
+}
+
+.copy-button:active {
+  background-color: #2a2a2a;
+  border-color: #666;
+}
