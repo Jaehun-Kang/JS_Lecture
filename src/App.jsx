@@ -12,7 +12,7 @@ function App() {
       <header className="fixed-header">
         <h1 style={{ display: "flex", alignItems: "center" }}>
           <img
-            src="/javascript.svg"
+            src={`${import.meta.env.BASE_URL}javascript.svg`}
             alt="JavaScript"
             style={{
               height: "2.25rem",

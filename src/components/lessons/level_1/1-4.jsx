@@ -32,17 +32,18 @@ const Lesson4 = {
         <CodeBlock
           filename="JavaScript"
           language="javascript"
-          code={`if (조건) {
-  // 조건이 참일 때 실행할 코드
+          code={`if (boolean) {
+  // 조건문이 참일 때 실행할 코드
 }
 
-if (조건) {
-  // 조건이 참일 때 실행할 코드
+if (boolean) {
+  // 조건문이 참일 때 실행할 코드
 } else {
-  // 조건이 거짓일 때 실행할 코드
-}
+  // 조건문이 거짓일 때 실행할 코드
+};
 `}
         />
+        <p>조건문 자리에는 boolean(true 또는 false)이 들어가야 한다.</p>
         <h3>비교 연산자</h3>
         <CodeBlock
           filename="JavaScript"
@@ -50,6 +51,37 @@ if (조건) {
           code={`==, === // 값이 같음, 타입도 같음
 !=, !== // 같지 않음, 타입도 다름
 >, <, >=, <= // 크기 비교
+`}
+        />
+        <p>비교 연산자를 연쇄 사용하면 의도한 대로 값이 나오지 않는다.</p>
+        <CodeBlock
+          filename="JavaScript"
+          language="javascript"
+          code={`if (1 < 1 < 1) {
+  // 실행 됨
+};
+`}
+        />
+        <h3>Truthy와 Falsy</h3>
+        <p>Truthy는 true로 인식하는 자료를 의미한다.</p>
+        <CodeBlock
+          filename="JavaScript"
+          language="javascript"
+          code={`1 // 0이 아닌 모든 숫자
+' ' // 비어있지 않은 문자열
+[] // 빈 배열
+{} // 빈 객체
+`}
+        />
+        <p>Falsy는 false로 인식하는 자료를 의미한다.</p>
+        <CodeBlock
+          filename="JavaScript"
+          language="javascript"
+          code={`0
+'' // 빈 문자열
+null // 값이 없음
+undefined // 정의되지 않음
+NaN // 숫자가 아님
 `}
         />
         <h3>폼 검증 함수 만들기</h3>
@@ -75,7 +107,7 @@ $('#id').val() // 요소의 값
           language="javascript"
           code={`$('element').on('event', function(e){
   e.preventDefault() // 이벤트 동작 방지
-}
+};
 `}
         />
         <p>
@@ -89,28 +121,61 @@ $('#id').val() // 요소의 값
         <CodeBlock
           filename="JavaScript"
           language="javascript"
-          code={`if (조건) {
-  // 조건이 참일 때 실행할 코드
-} else if (조건2) {
+          code={`if (boolean1) {
+  // 조건1이 참일 때 실행할 코드
+} else if (boolean2) {
   // 조건2가 참일 때 실행할 코드
-}
+};
 `}
         />
         <p>if 조건문 뒤에 원하는 만큼 추가할 수 있다.</p>
         <h3>input, change 이벤트</h3>
-        <h3>Truthy와 Falsy</h3>
-        <p>JavaScript에서 true/false로 평가되는 값들입니다.</p>
         <CodeBlock
-          filename="script.js"
+          filename="JavaScript"
           language="javascript"
-          code={`// truthy: 1, "문자", [], {}
-// falsy: 0, "", null, undefined, NaN
-
-if (input) {
-  // input이 truthy면 실행
-}
+          code={`document.getElementById('id').addEventListener('input', function(){
+  // input 이벤트 발생 시 실행할 코드
+});
 `}
         />
+        <p>&lt;input&gt;에 입력된 값이 변경될 때 실행된다.</p>
+        <CodeBlock
+          filename="JavaScript"
+          language="javascript"
+          code={`document.getElementById('id').addEventListener('change', function(){
+  // change 이벤트 발생 시 실행할 코드
+});
+`}
+        />
+        <p>&lt;input&gt;에 입력된 값이 변경되고 포커스가 해제되면 실행된다.</p>
+        <h3>and/or 연산자</h3>
+        <CodeBlock
+          filename="JavaScript"
+          language="javascript"
+          code={`if (boolean1 && boolean2){ // and 연산자
+  // 두 조건문이 모두 참일 때 실행할 코드
+};
+
+if (boolean1 || boolean2){ // or 연산자
+  // 두 조건문 중 하나라도 참일 때 실행할 코드
+};
+`}
+        />
+        <CodeBlock
+          filename="JavaScript"
+          language="javascript"
+          code={`if (true && false && (true || false)) {
+  // 실행 안됨
+};
+`}
+        />
+        <p>
+          이런 식으로 and/or 연산자를 여러 개 사용한 경우 계산되는 순서를 잘
+          이해해야 한다.
+          <br />
+          괄호 → && → || 순으로 계산되니 유의하고 사용하자.
+        </p>
+        <p></p>
       </div>
     </div>
   ),
