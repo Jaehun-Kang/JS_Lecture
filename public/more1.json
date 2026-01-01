@@ -1,0 +1,6 @@
+[
+  { "id": 4, "professor": "방경란", "title": "커뮤니케이션디자인", "grade": 2 },
+  { "id": 5, "professor": "유동관", "title": "일러스트레이션기초", "grade": 2 },
+  { "id": 6, "professor": "서승연", "title": "타이포그래피기초", "grade": 2 },
+  { "id": 7, "professor": "손우성", "title": "비디오그래피", "grade": 2 }
+]

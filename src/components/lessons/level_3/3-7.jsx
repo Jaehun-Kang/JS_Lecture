@@ -20,6 +20,7 @@ const Lesson22 = {
       <p>교수명 : ○○○</p>
     </div>
   </div>
+  <button class="btn btn-danger" id="more">더보기</button>
 </div>
 `}
         />
@@ -27,9 +28,14 @@ const Lesson22 = {
           filename="URL"
           language="javascript"
           code={`"https://jaehun-kang.github.io/JS_Lecture/lectures.json"
+"https://jaehun-kang.github.io/JS_Lecture/more1.json"
+"https://jaehun-kang.github.io/JS_Lecture/more2.json"
 `}
         />
-        <p>lectures 배열 데이터를 사용하여 각 강의 카드 레이아웃이 생성된다.</p>
+        <p>
+          lectures 배열 데이터를 사용하여 각 강의 카드 레이아웃이 생성된다.
+          <br />더 보기 버튼을 누르면 추가로 생성된다.
+        </p>
       </Foldable>
       <h3>서버</h3>
       <p>
@@ -81,7 +87,7 @@ $.get("URL").fail(data => {}); // 요청 실패 시 처리
 $.get("URL").catch(error => {}); // 요청 실패 시 처리
 `}
       />
-      <p>생 JavaScript로 Ajax 요청하려면 fetch 함수를 사용해야 한다.</p>
+      <p>JavaScript로 Ajax 요청하려면 fetch 함수를 사용해야 한다.</p>
       <CodeBlock
         filename="JavaScript"
         language="javascript"
