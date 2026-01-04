@@ -1,6 +1,47 @@
 [
-  { "id": 8, "professor": "방경란", "title": "커뮤니케이션디자인", "grade": 3 },
-  { "id": 9, "professor": "유동관", "title": "일러스트레이션기초", "grade": 3 },
-  { "id": 10, "professor": "서승연", "title": "타이포그래피기초", "grade": 3 },
-  { "id": 11, "professor": "손우성", "title": "비디오그래피", "grade": 3 }
+  { "id": 9, "professor": "서승연", "title": "융합디자인스튜디오", "grade": 4 },
+  {
+    "id": 10,
+    "professor": "손우성",
+    "title": "융합디자인스튜디오",
+    "grade": 4
+  },
+  {
+    "id": 11,
+    "professor": "신윤진",
+    "title": "융합디자인스튜디오",
+    "grade": 4
+  },
+  {
+    "id": 12,
+    "professor": "유동관",
+    "title": "융합디자인스튜디오",
+    "grade": 4
+  },
+  {
+    "id": 13,
+    "professor": "이원제",
+    "title": "융합디자인스튜디오",
+    "grade": 4
+  },
+  {
+    "id": 14,
+    "professor": "김한솔",
+    "title": "혁신디자인스튜디오",
+    "grade": 4
+  },
+  { "id": 15, "professor": "남정", "title": "혁신디자인스튜디오", "grade": 4 },
+  {
+    "id": 16,
+    "professor": "방경란",
+    "title": "혁신디자인스튜디오",
+    "grade": 4
+  },
+  {
+    "id": 17,
+    "professor": "안혜선",
+    "title": "혁신디자인스튜디오",
+    "grade": 4
+  },
+  { "id": 18, "professor": "미정", "title": "혁신디자인스튜디오", "grade": 4 }
 ]

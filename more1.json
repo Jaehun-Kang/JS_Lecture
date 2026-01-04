@@ -1,6 +1,7 @@
 [
-  { "id": 4, "professor": "방경란", "title": "커뮤니케이션디자인", "grade": 2 },
-  { "id": 5, "professor": "유동관", "title": "일러스트레이션기초", "grade": 2 },
-  { "id": 6, "professor": "서승연", "title": "타이포그래피기초", "grade": 2 },
-  { "id": 7, "professor": "손우성", "title": "비디오그래피", "grade": 2 }
+  { "id": 4, "professor": "유동관", "title": "일러스트레이션", "grade": 3 },
+  { "id": 5, "professor": "신윤진", "title": "패키지디자인", "grade": 3 },
+  { "id": 6, "professor": "이원제", "title": "브랜드디자인", "grade": 3 },
+  { "id": 7, "professor": "김한솔", "title": "디자인씽킹", "grade": 3 },
+  { "id": 8, "professor": "손우성", "title": "정보인터랙션디자인", "grade": 3 }
 ]
