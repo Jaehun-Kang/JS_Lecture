@@ -1,24 +1,19 @@
 import { useState } from "react";
 import lessons from "./components/lessons";
 import LessonList from "./components/LessonList";
+import EasterEgg from "./components/EE";
 import "./styles/lesson.css";
 
 function App() {
   const [selectedIdx, setSelectedIdx] = useState(null);
+
   const selectedLesson = lessons.find((l) => l.idx === selectedIdx);
 
   return (
     <div className="app">
       <header className="fixed-header">
         <h1 style={{ display: "flex", alignItems: "center" }}>
-          <img
-            src={`${import.meta.env.BASE_URL}javascript.svg`}
-            alt="JavaScript"
-            style={{
-              height: "2.25rem",
-              marginRight: ".75rem",
-            }}
-          />
+          <EasterEgg />
           마법연구회 JavaScript 강의
         </h1>
       </header>
