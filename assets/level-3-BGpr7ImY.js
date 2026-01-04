@@ -1,4 +1,4 @@
-import{j as e,F as t,C as a}from"./level-1-ji0-0WlL.js";const s={name:"3-1 Array/Object",idx:16,content:e.jsxs("div",{className:"lesson-content",children:[e.jsx("h2",{children:"Array/Object"}),e.jsx("h3",{children:"학생 카드 만들기"}),e.jsxs(t,{title:"학생 카드 코드",children:[e.jsx(a,{filename:"3-1.html",language:"html",code:`<div class="container mt-3">
+import{j as e,F as t,C as a}from"./level-1-DlGldl8s.js";const s={name:"3-1 Array/Object",idx:16,content:e.jsxs("div",{className:"lesson-content",children:[e.jsx("h2",{children:"Array/Object"}),e.jsx("h3",{children:"학생 카드 만들기"}),e.jsxs(t,{title:"학생 카드 코드",children:[e.jsx(a,{filename:"3-1.html",language:"html",code:`<div class="container mt-3">
   <div class="card p-3">
     <span>이름</span>
     <span>학번</span>
