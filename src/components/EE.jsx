@@ -8,6 +8,11 @@ export default function EasterEgg() {
   const [isDeactivated, setIsDeactivated] = useState(false);
   const [messages, setMessages] = useState([]);
   const [particles, setParticles] = useState([]);
+  const [deactivatedClicks, setDeactivatedClicks] = useState(0);
+  const [nextMessageThreshold, setNextMessageThreshold] = useState(
+    Math.floor(Math.random() * 3) + 3
+  );
+  const [lastMessage, setLastMessage] = useState(null);
 
   const messageTexts = [
     "어렵겠지만 다들 화이팅!!",
@@ -16,17 +21,36 @@ export default function EasterEgg() {
     "가즈아ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ",
   ];
 
-  const getRandomMessage = () =>
-    messageTexts[Math.floor(Math.random() * messageTexts.length)];
+  const getRandomMessage = () => {
+    let randomIndex;
+    do {
+      randomIndex = Math.floor(Math.random() * messageTexts.length);
+    } while (
+      messageTexts[randomIndex] === lastMessage &&
+      messageTexts.length > 1
+    );
+    return messageTexts[randomIndex];
+  };
 
   const handleLogoClick = () => {
+    setIsShaking(true);
+    setTimeout(() => setIsShaking(false), 100);
+
     if (isDeactivated) {
-      const msgId = Date.now();
-      const msgText = getRandomMessage();
-      setMessages((prev) => [...prev, { id: msgId, text: msgText }]);
-      setTimeout(() => {
-        setMessages((prev) => prev.filter((msg) => msg.id !== msgId));
-      }, 2000);
+      const newDeactivatedClicks = deactivatedClicks + 1;
+      setDeactivatedClicks(newDeactivatedClicks);
+
+      if (newDeactivatedClicks >= nextMessageThreshold) {
+        const msgId = Date.now();
+        const msgText = getRandomMessage();
+        setLastMessage(msgText);
+        setMessages((prev) => [...prev, { id: msgId, text: msgText }]);
+        setTimeout(() => {
+          setMessages((prev) => prev.filter((msg) => msg.id !== msgId));
+        }, 2000);
+        setDeactivatedClicks(0);
+        setNextMessageThreshold(Math.floor(Math.random() * 3) + 3);
+      }
       return;
     }
 
@@ -43,9 +67,6 @@ export default function EasterEgg() {
       }, 2000);
       return;
     }
-
-    setIsShaking(true);
-    setTimeout(() => setIsShaking(false), 100);
 
     if (isBurning) {
       const now = Date.now();
@@ -112,10 +133,10 @@ export default function EasterEgg() {
           marginRight: ".75rem",
           cursor: isDeactivated ? "default" : "pointer",
           transition: isShaking ? "none" : "filter 0.3s ease-out",
-          animation: isDeactivated
-            ? "none"
-            : isShaking
+          animation: isShaking
             ? "shake 0.1s"
+            : isDeactivated
+            ? "none"
             : isBurning
             ? "fireRainbow 0.6s infinite"
             : isGlowing
