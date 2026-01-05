@@ -58,9 +58,7 @@ obj[key] = newValue; // key에 해당하는 값을 newValue로 변경`}),e.jsx("
 arr[idx].key; // idx번째 객체의 key에 해당하는 값
 `}),e.jsx(a,{filename:"JavaScript",language:"javascript",code:`var obj = { key : [value, value], key : [value, value] };
 obj.key[idx]; // key에 해당하는 배열의 idx번째 값
-`}),e.jsx("h3",{children:"문자열 속 변수"}),e.jsx("p",{children:"문자열 속에 특정 변수를 넣어 출력하고 싶을 때가 있는데, 크게 두 가지 방법이 있다."}),e.jsx("p",{children:"1. + 연산자 사용"}),e.jsx(a,{filename:"JavaScript",language:"javascript",code:`var name = value;
-console.log("값은 " + name + "입니다."); // 값은 value입니다.
-`}),e.jsx("p",{children:"2. 백틱 사용"}),e.jsx(a,{filename:"JavaScript",language:"javascript",code:"var name = value;\nconsole.log(`값은 ${name}입니다.`); // 값은 value입니다.\n"})]})},l={name:"3-3 Select",idx:19,content:e.jsxs("div",{className:"lesson-content",children:[e.jsx("h2",{children:"Select"}),e.jsx("h3",{children:"상품 선택 폼 만들기"}),e.jsxs(t,{title:"상품 선택 폼 코드",children:[e.jsx(a,{filename:"3-3.html",language:"html",code:`<form class="container my-5 form-group">
+`})]})},l={name:"3-3 Select",idx:19,content:e.jsxs("div",{className:"lesson-content",children:[e.jsx("h2",{children:"Select"}),e.jsx("h3",{children:"상품 선택 폼 만들기"}),e.jsxs(t,{title:"상품 선택 폼 코드",children:[e.jsx(a,{filename:"3-3.html",language:"html",code:`<form class="container my-5 form-group">
     <p>상품선택</p>
     <select class="form-select mt-2">
       <option>모자</option>

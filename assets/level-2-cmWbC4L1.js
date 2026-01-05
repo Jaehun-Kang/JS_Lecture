@@ -115,7 +115,9 @@ function onTimeout() {
 .slide-box img {
   width: 100%;
 }
-`}),e.jsx("p",{children:"왼쪽, 1, 2, 3, 오른쪽 버튼을 누르면 애니메이션 효과와 함께 슬라이드가 이동한다."}),e.jsx(n,{title:"첨부파일 (assets 폴더에 넣기)",items:[{alt:"car1.png",src:t},{alt:"car2.png",src:l},{alt:"car3.png",src:i}]})]}),e.jsx("h3",{children:"UI 애니메이션 만들기 순서"}),e.jsxs("p",{children:["1. 시작 스타일 만들기 (CSS)",e.jsx("br",{}),"2. 종료 스타일 만들기 (CSS)",e.jsx("br",{}),"3. 애니메이션 시작 시점 구현 (JavaScript)",e.jsx("br",{}),"4. transition 속성 추가 (CSS)"]})]})},j={name:"2-5 Return",idx:11,content:e.jsxs("div",{className:"lesson-content",children:[e.jsx("h2",{children:"Return"}),e.jsx("h3",{children:"Return"}),e.jsx("p",{children:"return 문법은 함수에서 값을 반환할 때 사용한다."}),e.jsx(s,{filename:"JavaScript",language:"javascript",code:`function fName() {
+`}),e.jsx("p",{children:"왼쪽, 1, 2, 3, 오른쪽 버튼을 누르면 애니메이션 효과와 함께 슬라이드가 이동한다."}),e.jsx(n,{title:"첨부파일 (assets 폴더에 넣기)",items:[{alt:"car1.png",src:t},{alt:"car2.png",src:l},{alt:"car3.png",src:i}]})]}),e.jsx("h3",{children:"UI 애니메이션 만들기 순서"}),e.jsxs("p",{children:["1. 시작 스타일 만들기 (CSS)",e.jsx("br",{}),"2. 종료 스타일 만들기 (CSS)",e.jsx("br",{}),"3. 애니메이션 시작 시점 구현 (JavaScript)",e.jsx("br",{}),"4. transition 속성 추가 (CSS)"]}),e.jsx("h3",{children:"문자열 속 변수"}),e.jsx("p",{children:"문자열 속에 특정 변수를 넣고 싶을 때 사용할 수 있는 두 가지 방법이 있다."}),e.jsx("p",{children:"1. + 연산자 사용"}),e.jsx(s,{filename:"JavaScript",language:"javascript",code:`var name = value;
+console.log("값은 " + name + "입니다."); // 값은 value입니다.
+`}),e.jsx("p",{children:"2. 백틱 사용"}),e.jsx(s,{filename:"JavaScript",language:"javascript",code:"var name = value;\nconsole.log(`값은 ${name}입니다.`); // 값은 value입니다.\n"})]})},j={name:"2-5 Return",idx:11,content:e.jsxs("div",{className:"lesson-content",children:[e.jsx("h2",{children:"Return"}),e.jsx("h3",{children:"Return"}),e.jsx("p",{children:"return 문법은 함수에서 값을 반환할 때 사용한다."}),e.jsx(s,{filename:"JavaScript",language:"javascript",code:`function fName() {
   return value;
 }
 
@@ -144,8 +146,8 @@ console.log(toMs(2, 10)); // 130000
 }
 
 console.log(salePrice(70, false)); // 63
-console.log(salePrice(10, true)); // 8.5
-console.log(salePrice(10.3, true)); // 8.8
+console.log(salePrice(10, true)); // 7.5
+console.log(salePrice(10.3, true)); // 7.77
 `})]})]})},c="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%201000'%3e%3cdefs%3e%3cstyle%3e.cls-1{fill:%23000;}%3c/style%3e%3c/defs%3e%3ctitle%3eLogo%201%3c/title%3e%3cg%20id='logo1'%3e%3cpath%20class='cls-1'%20d='M500,927c0-477-5-495-113-495,108,0,113,0,113-360%20M500,927c0-477,5-495,113-495-108,0-113,0-113-360'/%3e%3cpath%20class='cls-1'%20d='M178.72,549,19,434A2.5,2.5,0,0,1,19,430L178.72,315c-39.34,35.29-61.42,75-61.42,117S139.38,513.71,178.72,549Z'/%3e%3cpath%20class='cls-1'%20d='M820.28,549,980,434a2.5,2.5,0,0,0,0-4.06L820.28,315c39.34,35.29,61.42,75,61.42,117S859.62,513.71,820.28,549Z'/%3e%3c/g%3e%3c/svg%3e",p={name:"2-6 스크롤 이벤트",idx:12,content:e.jsxs("div",{className:"lesson-content",children:[e.jsx("h2",{children:"스크롤 이벤트"}),e.jsx("h3",{children:"navbar 만들기"}),e.jsxs(a,{title:"navbar 코드",children:[e.jsx(s,{filename:"2-7.css",language:"css",code:`.navbar {
   position : fixed;
   width : 100%;
