@@ -1,4 +1,4 @@
-import{j as e,C as s,F as a,A as n}from"./level-1-BD2z24Jx.js";const d={name:"2-1 연산 응용",idx:7,content:e.jsxs("div",{className:"lesson-content",children:[e.jsx("h2",{children:"연산 응용"}),e.jsx("h3",{children:"축약형 연산자"}),e.jsx(s,{filename:"JavaScript",language:"javascript",code:`num = num + 1; // 덧셈
+import{j as e,C as s,F as a,A as n}from"./level-1-Dhgru3HE.js";const d={name:"2-1 연산 응용",idx:7,content:e.jsxs("div",{className:"lesson-content",children:[e.jsx("h2",{children:"연산 응용"}),e.jsx("h3",{children:"축약형 연산자"}),e.jsx(s,{filename:"JavaScript",language:"javascript",code:`num = num + 1; // 덧셈
 num += 1;
 num++;
 
