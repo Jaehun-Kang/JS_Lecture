@@ -674,6 +674,7 @@ console.log(name); // 불가능
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>변수</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -692,7 +693,6 @@ console.log(name); // 불가능
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ><\/script>
-    <title>변수</title>
   </head>
   <!-- Step2 : 다크 클래스 추가 -->
   <body class="dark">

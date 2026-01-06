@@ -1,4 +1,4 @@
-import{j as e,C as t,F as s,A as i}from"./level-1-CmscR5WW.js";const a={name:"2-1 연산 응용",idx:7,level:2,content:e.jsxs("div",{className:"lesson-content",children:[e.jsx("h2",{children:"연산 응용"}),e.jsx("h3",{children:"축약형 연산자"}),e.jsx(t,{filename:"JavaScript",language:"javascript",code:`num = num + 1; // 덧셈
+import{j as e,C as t,F as s,A as i}from"./level-1-DAnh3gfc.js";const a={name:"2-1 연산 응용",idx:7,level:2,content:e.jsxs("div",{className:"lesson-content",children:[e.jsx("h2",{children:"연산 응용"}),e.jsx("h3",{children:"축약형 연산자"}),e.jsx(t,{filename:"JavaScript",language:"javascript",code:`num = num + 1; // 덧셈
 num += 1;
 num++;
 
@@ -212,22 +212,27 @@ $(window).scrollTop(y); // y 위치로 수직 스크롤 이동
 `}),e.jsx("p",{children:"jQuery를 사용하면 scrollTop() 메서드만 사용하여 수직 스크롤 위치 확인과 이동을 할 수 있다."}),e.jsx("h3",{children:"실제 높이"}),e.jsx(t,{filename:"JavaScript",language:"javascript",code:`document.querySelector(".class").scrollTop; // 요소의 실제 스크롤 위치
 document.querySelector(".class").scrollHeight; // 요소의 실제 높이
 document.querySelector(".class").clientHeight; // 요소의 화면에 보이는 높이
-`}),e.jsx("h3",{children:"스크롤 이벤트 주의할 점"}),e.jsxs("p",{children:["1. 스크롤 내린 양은 정수 단위로 나오지 않고, OS마다 부장확할 수 있기 때문에 10px정도 여유를 두는 것이 좋다.",e.jsx("br",{}),"2. 스크롤 이벤트 리스너 안의 코드는 1초에 60번 이상 실행되므로 스크롤바 1개마다 1개만 부착하여 성능 저하를 방지하는 것이 좋다."]})]})},F=Object.freeze(Object.defineProperty({__proto__:null,default:h},Symbol.toStringTag,{value:"Module"})),g={name:"2-7 탭메뉴",idx:13,level:2,content:e.jsxs("div",{className:"lesson-content",children:[e.jsx("h2",{children:"탭메뉴"}),e.jsx("h3",{children:"탭메뉴 만들기"}),e.jsxs(s,{title:"탭메뉴 코드",children:[e.jsx(t,{filename:"2-8.html",language:"html",code:`<div class="container mt-5">
+`}),e.jsx("h3",{children:"스크롤 이벤트 주의할 점"}),e.jsxs("p",{children:["1. 스크롤 내린 양은 정수 단위로 나오지 않고, OS마다 부장확할 수 있기 때문에 10px정도 여유를 두는 것이 좋다.",e.jsx("br",{}),"2. 스크롤 이벤트 리스너 안의 코드는 1초에 60번 이상 실행되므로 스크롤바 1개마다 1개만 부착하여 성능 저하를 방지하는 것이 좋다."]})]})},F=Object.freeze(Object.defineProperty({__proto__:null,default:h},Symbol.toStringTag,{value:"Module"})),g={name:"2-7 탭메뉴",idx:13,level:2,content:e.jsxs("div",{className:"lesson-content",children:[e.jsx("h2",{children:"탭메뉴"}),e.jsx("h3",{children:"탭메뉴 만들기"}),e.jsxs(s,{title:"탭메뉴 코드",children:[e.jsx(t,{filename:"2-8.html",language:"html",code:`<div class="container">
   <ul class="list">
-    <li class="tab-button">Products</li>
-    <li class="tab-button orange">Information</li>
+    <li class="tab-button orange">Products</li>
+    <li class="tab-button">Information</li>
     <li class="tab-button">Shipping</li>
   </ul>
-  <div class="tab-content">
+  <div class="tab-content show">
     <p>상품설명입니다. Product</p>
   </div>
-  <div class="tab-content show">
+  <div class="tab-content">
     <p>스펙설명입니다. Information</p>
   </div>
   <div class="tab-content">
     <p>배송정보입니다. Shipping</p>
   </div>
-</div> `}),e.jsx(t,{filename:"2-8.css",language:"css",code:`ul.list {
+</div>
+`}),e.jsx(t,{filename:"2-8.css",language:"css",code:`.container {
+  margin-top: 20px;
+}
+
+ul.list {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -487,7 +492,7 @@ $("element").data('dataName') // 데이터 불러오기`}),e.jsx("p",{children:"
     <\/script>
   </body>
 </html>
-`})]})},B=Object.freeze(Object.defineProperty({__proto__:null,default:j},Symbol.toStringTag,{value:"Module"})),f={name:"2-10",idx:16,level:2,content:e.jsxs("div",{className:"lesson-content",children:[e.jsx("h2",{children:"2-10"}),e.jsx(t,{filename:"2-10.html",language:"html",code:""})]})},C=Object.freeze(Object.defineProperty({__proto__:null,default:f},Symbol.toStringTag,{value:"Module"})),b={name:"2-11",idx:17,level:2,content:e.jsxs("div",{className:"lesson-content",children:[e.jsx("h2",{children:"2-11"}),e.jsx(t,{filename:"2-11.html",language:"html",code:""})]})},D=Object.freeze(Object.defineProperty({__proto__:null,default:b},Symbol.toStringTag,{value:"Module"})),_={name:"2-2",idx:8,level:2,content:e.jsxs("div",{className:"lesson-content",children:[e.jsx("h2",{children:"2-2"}),e.jsx(t,{filename:"2-2.html",language:"html",code:`<!DOCTYPE html>
+`})]})},B=Object.freeze(Object.defineProperty({__proto__:null,default:j},Symbol.toStringTag,{value:"Module"})),f={name:"2-10",idx:16,level:2,content:e.jsxs("div",{className:"lesson-content",children:[e.jsx("h2",{children:"2-10"}),e.jsx(t,{filename:"2-10.html",language:"html",code:""}),e.jsx(t,{filename:"2-10.css",language:"css",code:""}),e.jsx(t,{filename:"2-10.js",language:"javascript",code:""})]})},C=Object.freeze(Object.defineProperty({__proto__:null,default:f},Symbol.toStringTag,{value:"Module"})),b={name:"2-11",idx:17,level:2,content:e.jsxs("div",{className:"lesson-content",children:[e.jsx("h2",{children:"2-11"}),e.jsx(t,{filename:"2-11.html",language:"html",code:""})]})},D=Object.freeze(Object.defineProperty({__proto__:null,default:b},Symbol.toStringTag,{value:"Module"})),_={name:"2-2",idx:8,level:2,content:e.jsxs("div",{className:"lesson-content",children:[e.jsx("h2",{children:"2-2"}),e.jsx(t,{filename:"2-2.html",language:"html",code:`<!DOCTYPE html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
@@ -593,6 +598,7 @@ $("element").data('dataName') // 데이터 불러오기`}),e.jsx("p",{children:"
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regex 응용</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -610,7 +616,6 @@ $("element").data('dataName') // 데이터 불러오기`}),e.jsx("p",{children:"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ><\/script>
-    <title>Regex 응용</title>
   </head>
   <body>
     <!-- 2-3 기본 코드 -->
@@ -1110,4 +1115,4 @@ body {
   width: 0%;
   transition: width 150ms;
 }
-`})]})},X=Object.freeze(Object.defineProperty({__proto__:null,default:T},Symbol.toStringTag,{value:"Module"})),I={name:"2-8",idx:14,level:2,content:e.jsxs("div",{className:"lesson-content",children:[e.jsx("h2",{children:"2-8"}),e.jsx(t,{filename:"2-8.html",language:"html",code:""})]})},Z=Object.freeze(Object.defineProperty({__proto__:null,default:I},Symbol.toStringTag,{value:"Module"})),P={name:"2-9",idx:15,level:2,content:e.jsxs("div",{className:"lesson-content",children:[e.jsx("h2",{children:"2-9"}),e.jsx(t,{filename:"2-9.html",language:"html",code:""})]})},U=Object.freeze(Object.defineProperty({__proto__:null,default:P},Symbol.toStringTag,{value:"Module"}));export{H as _,E as a,z as b,F as c,M as d,L as e,N as f,J as g,$ as h,O as i,U as j,Z as k,X as l,Q as m,R as n,V as o,Y as p,A as q,D as r,C as s,B as t};
+`})]})},X=Object.freeze(Object.defineProperty({__proto__:null,default:T},Symbol.toStringTag,{value:"Module"})),I={name:"2-8",idx:14,level:2,content:e.jsxs("div",{className:"lesson-content",children:[e.jsx("h2",{children:"2-8"}),e.jsx(t,{filename:"2-8.html",language:"html",code:""}),e.jsx(t,{filename:"2-8.css",language:"css",code:""}),e.jsx(t,{filename:"2-8.js",language:"javascript",code:""})]})},Z=Object.freeze(Object.defineProperty({__proto__:null,default:I},Symbol.toStringTag,{value:"Module"})),P={name:"2-9",idx:15,level:2,content:e.jsxs("div",{className:"lesson-content",children:[e.jsx("h2",{children:"2-9"}),e.jsx(t,{filename:"2-9.html",language:"html",code:""}),e.jsx(t,{filename:"2-9.css",language:"css",code:""})]})},U=Object.freeze(Object.defineProperty({__proto__:null,default:P},Symbol.toStringTag,{value:"Module"}));export{H as _,E as a,z as b,F as c,M as d,L as e,N as f,J as g,$ as h,O as i,U as j,Z as k,X as l,Q as m,R as n,V as o,Y as p,A as q,D as r,C as s,B as t};
