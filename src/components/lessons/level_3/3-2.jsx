@@ -19,28 +19,28 @@ const Lesson18 = {
   <div class="card">
     <div class="card-body">
       <h5>수업명</h5>
-      <p>교수명 : ○○○</p>
+      <p>교수 : ○○○</p>
       <button class="btn btn-danger">장바구니</button>
     </div>
   </div>
   <div class="card">
     <div class="card-body">
       <h5>수업명</h5>
-      <p>교수명 : ○○○</p>
+      <p>교수 : ○○○</p>
       <button class="btn btn-danger">장바구니</button>
     </div>
   </div>
   <div class="card">
     <div class="card-body">
       <h5>수업명</h5>
-      <p>교수명 : ○○○</p>
+      <p>교수 : ○○○</p>
       <button class="btn btn-danger">장바구니</button>
     </div>
   </div>
   <div class="card">
     <div class="card-body">
       <h5>수업명</h5>
-      <p>교수명 : ○○○</p>
+      <p>교수 : ○○○</p>
       <button class="btn btn-danger">장바구니</button>
     </div>
   </div>

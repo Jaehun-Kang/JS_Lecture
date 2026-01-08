@@ -21,15 +21,9 @@ const Lesson17 = {
     <span>학번</span>
   </div>
 </div>
-
-<script>
-  var student1 = { name : '강제헌', pupil : 202020183 } 
-</script>
 `}
         />
-        <p>
-          학생 카드의 이름과 학번 부분에 student1 객체의 값을 불러와 대체한다.
-        </p>
+        <p>학생 카드의 이름과 학번 부분에 학생 데이터를 불러와 대체한다.</p>
       </Foldable>
       <h3>Array 자료형</h3>
       <p>
