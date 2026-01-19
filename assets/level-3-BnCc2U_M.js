@@ -402,7 +402,7 @@ $.get("URL").catch(error => {}); // 요청 실패 시 처리
 `}),e.jsx("p",{children:"버튼을 누르면 강의 목록이 정렬되거나 필터링된다."})]}),e.jsx("h3",{children:".sort()"}),e.jsx(t,{filename:"JavaScript",language:"javascript",code:`var arr = [value, value, value];
 
 arr.sort(function (a, b) {
-  return result // result가 음수면 그대로, 양수면 역순으로 정렬
+  return result // result가 양수면 b를 왼쪽, 음수면 b를 오른쪽
 });
 `}),e.jsx("p",{children:"sort() 함수는 원본 배열을 영구적으로 변형시키기 때문에 원본을 따로 복사해서 사용하는 것이 좋다."}),e.jsx("h3",{children:".filter()"}),e.jsx("p",{children:"특정 범위의 값을 필터링하고 싶을 때 사용한다."}),e.jsx(t,{filename:"JavaScript",language:"javascript",code:`var arr = [value, value, value];
 
