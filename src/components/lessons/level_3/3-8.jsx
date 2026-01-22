@@ -59,7 +59,7 @@ const Lesson24 = {
         code={`var arr = [value, value, value];
 
 arr.sort(function (a, b) {
-  return result // result가 음수면 그대로, 양수면 역순으로 정렬
+  return result // result가 양수면 b를 왼쪽, 음수면 b를 오른쪽
 });
 `}
       />

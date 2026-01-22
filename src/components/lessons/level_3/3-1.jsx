@@ -47,8 +47,8 @@ arr.push(value); // 배열 끝에 value 추가
 `}
       />
       <p>
-        배열은은 이름, 학번, 전공 등 여러 자료들 중 한 가지 자료에 대한 값들을
-        한 곳에 저장할 때 사용하면 좋다.
+        배열은 이름, 학번, 전공 등 여러 자료들 중 한 가지 자료에 대한 값들을 한
+        곳에 저장할 때 사용하면 좋다.
       </p>
       <h3>Object 자료형</h3>
       <p>
@@ -63,8 +63,8 @@ arr.push(value); // 배열 끝에 value 추가
       <CodeBlock
         filename="JavaScript"
         language="javascript"
-        code={`obj[key]; // key에 해당하는 value
-obj[key] = newValue; // key에 해당하는 값을 newValue로 변경`}
+        code={`obj["key"]; // key에 해당하는 value
+obj["key"] = newValue; // key에 해당하는 값을 newValue로 변경`}
       />
       <p>
         객체는 한 사람의 이름, 학번, 전공 등 여러 가지 자료를 한 곳에 묶어
